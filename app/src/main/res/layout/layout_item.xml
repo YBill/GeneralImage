@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#999">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:background="#fff">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_top_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/card_logo" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="h,16:9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_top_icon"
+            tools:src="@tools:sample/avatars" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="40dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="黑龙江省哈尔滨市小学毕业年级迎来复课第一，黑龙江省哈尔滨市小学毕业年级迎来复课第一，黑龙江省哈尔滨市小学毕业年级迎来复课第一"
+            android:textColor="#333"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_content" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
